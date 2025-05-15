@@ -1,12 +1,63 @@
-# React + Vite
+# 🚀 Galaxy 3D Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually immersive **3D animated personal portfolio** website with a galaxy space theme, built using **React**, **Next.js**, **Framer Motion**, and **Tailwind CSS**. Designed to showcase projects, skills, and experiences in a futuristic and interactive style.
 
-Currently, two official plugins are available:
+![Kasam's Space Portfolio](/Port1.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌌 Features
 
-## Expanding the ESLint configuration
+- 🚀 3D space-inspired animated layout
+- 🌠 Starfield background with Parallax Scrolling Effects
+- ⚡ Framer Motion transitions and interactive UI
+- 💡 Projects, skills, and about sections
+- 🌐 Fully responsive & SEO-friendly
+- ⚙️ Built with React, Next.js, Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/) – SSR & static site generation
+- [React](https://reactjs.org/) – UI library
+- [Framer Motion](https://www.framer.com/motion/) – Animation
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS
+- [Three.js (Optional)](https://threejs.org/) – For complex 3D elements
+
+
+## 📁 Project Structure
+
+```
+kasams-space-portfolio/
+├── public/              # Static files
+│   ├── Assets/          # Assets
+│       ├── Logos   # Image Assets
+│       ├── Projects   # Image Assets
+│       ├── Socials   # Image Assets
+│   ├── models/          # 3D models
+│   └── fonts/           # Custom fonts
+├── src/
+│   ├── app/             # Next.js App Router
+│   │   ├── layout.tsx   # Root layout
+│   │   ├── page.tsx     # Home page
+│   ├── components/      # Reusable components
+│   │   ├── Main/        # Project and skill cards
+│   │   ├── Sub          # Hero Content
+│   ├── Contraints/      # Custom React hooks
+│   └── Sections/        # Custom Sections
+├── .eslintrc.json       # ESLint configuration
+├── .gitignore           # Git ignore file
+├── next.config.js       # Next.js configuration
+├── package.json         # Dependencies and scripts
+├── postcss.config.js    # PostCSS configuration
+├── README.md            # Project documentation
+├── tailwind.config.js   # Tailwind CSS configuration
+└── tsconfig.json        # TypeScript configuration
+```
+
+## 🚧 Installation
+
+```bash
+git clone (https://github.com/VERIDIITE/Personal-Portfolio.git)
+cd Personal-Portfolio
+npm install
+npm run dev
+```
+
