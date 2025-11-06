@@ -39,28 +39,28 @@ export const myProjects = [
   },
   {
     id: 2,
-    title: "NOVAAI Landing Page",
+    title: "Tabb – Migration Project (Private)",
     description:
-      "A cutting-edge React and TypeScript-based landing page template designed for AI products, services, and startups.",
+      "Led the modernization of a legacy Ruby on Rails application into a modular TypeScript-based system using Next.js, NestJS, and Prisma.",
     subDescription: [
-      "Developed sleek, modern aesthetics with responsive design that captivates visitors across all devices.",
-      "Implemented React components with TypeScript for type safety and improved developer experience.",
-      "Created an impressive digital presence with interactive UI elements and smooth animations.",
-      "Designed with scalability in mind to accommodate growing AI product features and services.",
+      "Rebuilt the architecture with clear separation between frontend (Next.js) and backend (NestJS) for better scalability and maintainability.",
+      "Integrated Prisma ORM with PostgreSQL to ensure type-safe queries, schema management, and seamless database connectivity.",
+      "Configured Heroku pipelines for continuous deployment, version control, and efficient staging-to-production workflows.",
+      "Documented the full migration process and presented technical findings to management, highlighting future-proof design and system flexibility.",
     ],
-    href: "https://github.com/VERIDIITE/NovaAI-Landing-Page",
+    href: "https://tabb.cc/",
     logo: "",
-    image: "/assets/projects/A11.png",
+    image: "/assets/projects/tabb.png",
     tags: [
       {
         id: 1,
-        name: "TypeScript",
-        path: "/assets/logos/typescript.svg",
+        name: "Nextjs",
+        path: "/assets/logos/nextjs.png",
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
+        name: "Nestjs",
+        path: "/assets/logos/nestjs.svg",
       },
       {
         id: 4,
@@ -71,33 +71,34 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "MVVM Dashboard Interface",
+    title: "AI-Powered NFT Discovery Platform Project",
     description:
-      "A clean and interactive dashboard interface using WPF with MVVM design pattern for optimal scalability.",
+      "A modern, AI-driven NFT discovery and curation platform built with Next.js, React, and TypeScript to redefine digital asset exploration.",
     subDescription: [
-      "Implemented using the MVVM (Model-View-ViewModel) architecture for separation of concerns and maintainability.",
-      "Featured built-in text search filtering for efficient data navigation and user experience.",
-      "Designed with modularity in mind to support scalable application development.",
-      "ICreated an intuitive and user-friendly interface with responsive WPF controls.",
+      "Developed intelligent NFT recommendation and curation systems powered by AI algorithms for personalized discovery experiences.",
+      "Built a modern Spotify-inspired interface with smooth Framer Motion animations and responsive design across all devices.",
+      "Implemented playlist-style NFT management features, enabling users to create, save, and organize their favorite collections.",
+      "Added advanced filtering by price, rarity, and collection using dynamic data fetching and real-time updates.",
+      "Leveraged a modern tech stack — Next.js 14, React 18, Tailwind CSS, Shadcn/UI, and Sonner for interactive notifications — to deliver a sleek and performant user experience.",
     ],
-    href: "https://github.com/VERIDIITE/Win-WPF-Dashboard-UI",
+    href: "https://curatedaiproject-jcjy.vercel.app/",
     logo: "",
-    image: "/assets/projects/V2.png",
+    image: "/assets/projects/nft.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Nextjs",
+        path: "/assets/logos/nextjs.png",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
       },
     ],
   },
@@ -231,6 +232,17 @@ export const mySocials = [
 
 export const experiences = [
   {
+    title: "Software Engineer (Internship)",
+    job: "Risidio",
+    date: "2024-2025",
+    contents: [
+      "Contributed to the migration of legacy Ruby on Rails systems into a modern TypeScript-based architecture using Next.js and NestJS.",
+      "Developed modular, scalable frontend and backend components — integrating Prisma ORM for type-safe database management with PostgreSQL.",
+      "Enhanced CI/CD pipelines and deployment automation through Heroku, ensuring smooth delivery and environment consistency.",
+      "Collaborated cross-functionally to document and present the new architecture (Tabb project) — improving team understanding and future scalability.",
+    ],
+  },
+  {
     title: "Back-of-House Trainer",
     job: "Popeyes Louisiana Kitchen",
     date: "2022-2024",
@@ -239,17 +251,6 @@ export const experiences = [
       "Proactively trained and mentored new team members on proper kitchen procedures and equipment operation.",
       "Implemented efficient inventory management systems, reducing waste by 15% and ensuring optimal stock levels.",
       "Contributed to positive team dynamics, resulting in improved operational efficiency and enhanced customer satisfaction.",
-    ],
-  },
-  {
-    title: "Picker / Packer",
-    job: "SHEIN / CIDER",
-    date: "2024-2025",
-    contents: [
-      "Executed accurate order picking using RF scanning devices, consistently meeting daily productivity targets.",
-      "DPerformed meticulous quality control checks to ensure order accuracy and product condition before packaging.",
-      "Packaged merchandise following company guidelines for presentation, protection, and shipping requirements.",
-      "Collaborated with warehouse team members to optimize workflow during high-volume periods and seasonal peaks.",
     ],
   },
   {

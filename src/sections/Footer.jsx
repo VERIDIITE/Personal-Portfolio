@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
         ))}
 
-        <p>© 2025 Kasam Ali. All rights reserved.</p>
+        <p>© 2025 Kasam Ali Aftab. All rights reserved.</p>
       </div>
     </section>
   );
