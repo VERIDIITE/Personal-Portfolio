@@ -78,7 +78,6 @@ export const myProjects = [
       "Developed intelligent NFT recommendation and curation systems powered by AI algorithms for personalized discovery experiences.",
       "Built a modern Spotify-inspired interface with smooth Framer Motion animations and responsive design across all devices.",
       "Implemented playlist-style NFT management features, enabling users to create, save, and organize their favorite collections.",
-      "Added advanced filtering by price, rarity, and collection using dynamic data fetching and real-time updates.",
       "Leveraged a modern tech stack — Next.js 14, React 18, Tailwind CSS, Shadcn/UI, and Sonner for interactive notifications — to deliver a sleek and performant user experience.",
     ],
     href: "https://curatedaiproject-jcjy.vercel.app/",

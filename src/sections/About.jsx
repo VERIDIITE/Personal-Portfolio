@@ -48,12 +48,12 @@ const About = () => {
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="SOLID"
+              text="React"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "75%" }}
-              text="Design Patterns"
+              text="Nextjs"
               containerRef={grid2Container}
             />
             <Card
