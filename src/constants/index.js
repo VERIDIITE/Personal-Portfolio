@@ -101,7 +101,6 @@ export const myProjects = [
       },
     ],
   },
-
   {
     id: 4,
     title: "Hyperactive Block Reveal Animation",
@@ -134,7 +133,6 @@ export const myProjects = [
       },
     ],
   },
-
   {
     id: 5,
     title: "AI-Powered NFT Discovery Platform Project",
@@ -207,7 +205,6 @@ export const myProjects = [
 ];
 
 // SOCIALS
-
 export const mySocials = [
   {
     name: "Github",
