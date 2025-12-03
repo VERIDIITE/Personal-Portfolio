@@ -71,6 +71,72 @@ export const myProjects = [
   },
   {
     id: 3,
+    title: "Moonstone – Admin Module (Private)",
+    description:
+      "A unified admin module developed for Moonstone, designed to serve both the Lunim and Tabb platforms. Built using Next.js, NestJS, Prisma, and Prismic CMS for content management.",
+    subDescription: [
+      "Implemented a scalable admin module inside Moonstone to centralize management for both Lunim and Tabb.",
+      "Integrated Prismic CMS for structured content management across multiple product domains.",
+      "Developed reusable components and shared services to streamline operations between platforms.",
+      "Used Next.js for the frontend architecture and NestJS + Prisma for secure backend APIs.",
+    ],
+    href: "https://github.com/VERIDIITE",
+    logo: "",
+    image: "/assets/projects/moonstone.png",
+    tags: [
+      {
+        id: 1,
+        name: "Nextjs",
+        path: "/assets/logos/nextjs.png",
+      },
+      {
+        id: 2,
+        name: "Nest.js",
+        path: "/assets/logos/nestjs.svg",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Hyperactive Block Reveal Animation",
+    description:
+      "A visually striking block-reveal animation system powered by GSAP, designed to create high-impact transitions and content reveals for modern web experiences.",
+    subDescription: [
+      "Built a dynamic block-reveal effect using GSAP’s advanced animation engine.",
+      "Created smooth, high-performance transitions with precise timing and stagger controls.",
+      "Implemented reusable animation utilities for easy integration across multiple pages and components.",
+      "Optimized for modern Next.js front-end workflows and responsive layouts.",
+    ],
+    href: "https://block-reveal-animation.vercel.app/", // update if you want to point to a specific repo
+    logo: "",
+    image: "/assets/projects/block.png", // replace with your actual image
+    tags: [
+      {
+        id: 1,
+        name: "GSAP",
+        path: "/assets/logos/gsap.png",
+      },
+      {
+        id: 2,
+        name: "Nextjs",
+        path: "/assets/logos/nextjs.png",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+    ],
+  },
+
+  {
+    id: 5,
     title: "AI-Powered NFT Discovery Platform Project",
     description:
       "A modern, AI-driven NFT discovery and curation platform built with Next.js, React, and TypeScript to redefine digital asset exploration.",
@@ -98,75 +164,6 @@ export const myProjects = [
         id: 3,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Real-Time WPF Chat Application",
-    description:
-      "A real-time chat application built with WPF (Windows Presentation Foundation) using the MVVM architecture.",
-    subDescription: [
-      "Developed with MVVM architecture to ensure clean separation between UI and business logic.",
-      "Implemented real-time messaging capabilities for instant communication.",
-      "Designed a professional and modern user interface with WPF controls and styling.",
-      "Created responsive layouts for optimal user experience across different screen sizes.",
-    ],
-    href: "https://github.com/VERIDIITE/WPF-C-Professional-Modern-Chat-App",
-    logo: "",
-    image: "/assets/projects/19.png",
-    tags: [
-      {
-        id: 1,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Employee Management System",
-    description:
-      "A C# Windows Forms Application for efficient employee record management with SQL database integration.",
-    subDescription: [
-      "Implemented CRUD operations (Create, Read, Update, Delete) for comprehensive employee data management.",
-      "Integrated SQL Server database for reliable and secure data storage and retrieval.",
-      "Designed an intuitive WinForms interface for easy navigation and operation.",
-      "Developed search functionality for quick access to specific employee records.",
-    ],
-    href: "https://github.com/VERIDIITE/WinForms-EmployeeManagementSystem-SQL",
-    logo: "",
-    image: "/assets/projects/4.png",
-    tags: [
-      {
-        id: 1,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
       },
     ],
   },
@@ -208,6 +205,8 @@ export const myProjects = [
     ],
   },
 ];
+
+// SOCIALS
 
 export const mySocials = [
   {
