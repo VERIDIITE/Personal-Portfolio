@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const Projects = ({
   title,
@@ -9,13 +10,17 @@ const Projects = ({
   image,
   tags,
   setPreview,
+  index,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+  const [projectRef, isVisible] = useScrollReveal({ threshold: 0.2, once: true });
+
   return (
     <>
       <div
-        className="flex-wrap items-center 
-    justify-between py-10 space-y-14 sm:flex sm:space-y-0"
+        ref={projectRef}
+        className={`flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0 scroll-reveal ${isVisible ? 'visible' : ''}`}
+        style={{ transitionDelay: `${index * 0.1}s` }}
         onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
       >

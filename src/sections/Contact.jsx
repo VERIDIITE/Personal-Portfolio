@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
 import { Particles } from "../components/Particles";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const Contact = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertType, setAlertType] = useState("success");
   const [alertMessage, setAlertMessage] = useState("Empty");
+  const [sectionRef, isVisible] = useScrollReveal({ threshold: 0.1, once: true });
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -71,8 +73,8 @@ const Contact = () => {
       />
       {showAlert && <Alert type={alertType} text={alertMessage} />}
       <div
-        className="flex flex-col items-center 
-      justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary"
+        ref={sectionRef}
+        className={`flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary scroll-reveal ${isVisible ? 'visible' : ''}`}
       >
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading"> Lets Talk </h2>

@@ -3,13 +3,19 @@ import Card from "../components/Card";
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const About = () => {
   const grid2Container = useRef();
+  const [sectionRef, isVisible] = useScrollReveal({ threshold: 0.1, once: true });
+
   return (
     <section id="about" className="c-space section-spacing">
       <h2 className="text-heading ">About Me</h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
+      <div
+        ref={sectionRef}
+        className={`grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12 scroll-reveal ${isVisible ? 'visible' : ''}`}
+      >
         {/* Grid 1 */}
         <div
           className="flex items-end 
