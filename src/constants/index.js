@@ -228,7 +228,7 @@ export const mySocials = [
 export const experiences = [
   {
     title: "Software Engineer (Internship)",
-    job: "Risidio",
+    job: "Lunim / Tabb",
     date: "2024-2025",
     contents: [
       "Contributed to the migration of legacy Ruby on Rails systems into a modern TypeScript-based architecture using Next.js and NestJS.",
