@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useState } from "react";
 import Alert from "../components/Alert";
 import { Particles } from "../components/Particles";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+
+const WEB3FORMS_ACCESS_KEY = "b858e62d-4977-4c34-80b2-3955129ea0e5";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,11 +11,12 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [isLoading, setisLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [alertType, setAlertType] = useState("success");
-  const [alertMessage, setAlertMessage] = useState("Empty");
+  const [alertMessage, setAlertMessage] = useState("");
   const [sectionRef, isVisible] = useScrollReveal({ threshold: 0.1, once: true });
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -27,38 +29,34 @@ const Contact = () => {
       setShowAlert(false);
     }, 5000);
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setisLoading(true);
+    setIsLoading(true);
 
     try {
-      console.log("from submitted:", formData);
-      await emailjs.send(
-        "service_8uopav4",
-        "template_fifwamv",
-        {
-          from_name: formData.name,
-          to_name: "Kasam",
-          from_email: formData.email,
-          to_email: "ka276310@gmail.com",
-          message: formData.message,
-        },
-        "hjqc8mAERS1jk5MY3"
-      );
-      setisLoading(false);
-      console.log("sucess");
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
+      const form = new FormData(e.target);
+      form.append("access_key", WEB3FORMS_ACCESS_KEY);
+      form.append("subject", `New contact from ${formData.name}`);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: form,
       });
-      isLoading(false);
-      setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
+
+      const result = await response.json();
+
+      if (result.success) {
+        setFormData({ name: "", email: "", message: "" });
+        showAlertMessage("success", "Your message has been sent!");
+      } else {
+        throw new Error(result.message || "Something went wrong");
+      }
     } catch (error) {
-      isLoading(false);
-      console.log(error);
-      showAlertMessage("danger", "Somthing went wrong!");
+      console.error(error);
+      showAlertMessage("danger", "Something went wrong!");
+    } finally {
+      setIsLoading(false);
     }
   };
 
